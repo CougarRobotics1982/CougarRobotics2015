@@ -26,6 +26,9 @@ void sMoveServo::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void sMoveServo::Execute() {
+	Joystick* js= Robot::oi->getxBox();
+	float x = js->GetX();
+	float y = js->GetY();
 	
 }
 
